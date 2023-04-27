@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Define the table data as a 2D array
+        let tableData = [
+            ["Name", "Age", "Gender"],
+            ["John", "25", "Male"],
+            ["Jane", "30", "Female"],
+            ["Mark", "40", "Male"],
+            ["Emily", "20", "Female"]
+        ];
+
+        // Create a new table element
+        let table = document.createElement("table");
+
+        // Loop through the table data
+        for (let i = 0; i < tableData.length; i++) {
+            // Create a new row for the table
+            let row = table.insertRow();
+
+            // Loop through the row data and add cells to the row
+            for (let j = 0; j < tableData[i].length; j++) {
+                let cell = row.insertCell();
+                cell.textContent = tableData[i][j];
+                if (i % 2 !== 0) {
+                    cell.style.backgroundColor = "lightblue";
+                }
+            }
+        }
+
+        // Add the table to the HTML document
+        document.body.appendChild(table);
+
+    </script>
+</body>
+
+</html>

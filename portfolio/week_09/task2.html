@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Verdana;
+        }
+        body{
+            background-color:#00BFFF;   
+        }
+        .container{
+            border: 5px solid black;
+        }
+        .header{
+            background-color: #ccaa66;
+            border: 1px solid black;
+        }
+        .row{
+            border: 1px solid black;
+            
+        }
+        .leftColumn{
+            float: left;
+            width: 25%;  
+        }
+
+        .rightColumn{
+            text-align: center;
+            float: left;
+            width: 75%;   
+        }
+        .row::after {
+           content: "";
+           display: table;
+           clear: both;
+        }
+        .footer{
+            background-color:#ccaa66;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Stinky Pete's Pirate Tavern</h1>
+        <div class="row">
+            <div class="leftColumn">
+            <dl style="background-color:#E8D882;">
+                <dt>Home</dt>
+                <dt>Grog</dt>
+                <dt>Shanties</dt>
+                <dt>Become a swag</dt>
+            </dl>
+        </div>
+    
+        <div class="rightColumn">
+            <ul style="background-color:#f1e8b0;">
+                <h5>Avast maties! Here ye'll be findin' all these delights...</h5>
+                <li>Great grog</li>
+                <li>All the rum you can drink</li>
+                <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+                <li>Wenches and swabs for every taste</li>
+                <li>Salty seadogs singin' shanties</li>
+                <li>...</li>
+            <h5>Berth 23 </h5>
+            <h5>Nottingham Docks</h5>
+            <h5>0115 9324567</h5>
+            </ul>
+        </div>
+    </div>
+        <div class="footer">
+            <p>Copyright © 2011 Stinky Pete's Pirate Tavern</p>
+            <a href="www.stinkeypete@arrrr.com">stinkeypete@arrrr.com</a> 
+        </div>
+    </div>
+     
+</body>
+</html>
